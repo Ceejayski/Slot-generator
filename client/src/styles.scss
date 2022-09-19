@@ -1,0 +1,24 @@
+body {
+  background-color: #F4F4F4;
+}
+
+.main-app-container {
+  min-height: 100vh;
+}
+
+.react-calendar {
+  border: none;
+  // font-size: 1.1em;
+}
+
+// selected duration
+
+.selected-duration {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+// time slot
+.time-slot__container {
+  height: 20rem;
+  overflow-y: scroll;
+}
