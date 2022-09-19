@@ -51,7 +51,7 @@ SLOT_INTERVAL= desired slot interval in minutes
   - duration: Integer | default: 30
 - Response
   - 200: Success
-  - - body: {available_slots: Array, error: Boolean}
+    - body: {available_slots: Array, error: Boolean}
 
 #### POST /booked_slots
 
@@ -61,8 +61,8 @@ SLOT_INTERVAL= desired slot interval in minutes
   - name: String
 - Response
   - 201: Created
-  - - body: {slot: DateTime, error: Boolean}
+    - body: {slot: DateTime, error: Boolean}
   - 422: Unprocessable Entity
-  - - body: {errors: Array, error: Boolean}
+    - body: {errors: Array, error: Boolean}
 
 
