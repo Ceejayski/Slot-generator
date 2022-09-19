@@ -118,7 +118,7 @@ class AvailableTimeSlotGeneratorService
     end
 
     def find_unavailable_slot(day)
-      BookedSlot.where('DATE(start_date) = ? OR DATE(end_date) = ? ', day.yesterday, day.yesterday).order(start_date: :asc, end_date: :asc).pluck(
+      BookedSlot.where('DATE(start_date) = ? OR DATE(end_date) = ? ', day, day).order(start_date: :asc, end_date: :asc).pluck(
         :start_date, :end_date
       )
     end
